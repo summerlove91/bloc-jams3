@@ -1,6 +1,6 @@
-var collectionItemTemplate =
+var collectionItemTemplate = 
      '<div class="collection-album-container column fourth">'
-   + '  <img src="~/Desktop/projects/bloc-jams-angular/app/assets/images/album_covers/01.png"/>'
+   + '  <img src="assets/images/album_covers/01.png"/>'
    + '  <div class="collection-album-info caption">'
    + '    <p>'
    + '      <a class="album-name" href="album.html"> The Colors </a>'
@@ -15,14 +15,13 @@ var collectionItemTemplate =
    ;
 
 
+
 window.onload = function() {
-     // #1
-     var collectionContainer = document.getElementsByClassName('album-covers')[0];
-     // #2
+    var collectionContainer = document.getElementsByClassName('album-covers')[0];
+     
      collectionContainer.innerHTML = '';
- 
      // #3
      for (var i = 0; i < 12; i++) {
          collectionContainer.innerHTML += collectionItemTemplate;
      }
- }
+};
